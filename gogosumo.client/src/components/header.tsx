@@ -12,7 +12,7 @@ const Header = () => {
                         alt="an image of the face of a sumo wrestler"
                         className="rounded"
                     />
-                    GoGo Sumo
+                    Go! Go! Sumo
                 </div>
                 <nav className="flex w-1/3 justify-center space-x-4">
                     <a href="#">Home</a>
