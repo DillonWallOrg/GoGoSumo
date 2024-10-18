@@ -14,7 +14,7 @@ const Header = () => {
                     />
                     Go! Go! Sumo
                 </div>
-                <nav className="flex w-1/3 justify-center space-x-4">
+                <nav className="hidden md:flex w-1/3 justify-center space-x-4">
                     <a href="#">Home</a>
                     <a href="#">Tours</a>
                     <a href="#">Weddings</a>
