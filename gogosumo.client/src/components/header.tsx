@@ -2,7 +2,7 @@ import { SignInButton, SignedIn, SignedOut, UserButton, ClerkLoading } from "@cl
 
 const Header = () => {
     return (
-        <header className="bg-orange-100 dark:bg-slate-900">
+        <header className="bg-gray-100">
             <div className="container mx-auto flex justify-between items-center py-4">
                 <div className="flex w-1/3 justify-start items-center gap-4 text-2xl font-bold">
                     <img
