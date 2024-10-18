@@ -1,5 +1,4 @@
 import { SignInButton, SignedIn, SignedOut, UserButton, ClerkLoading } from "@clerk/clerk-react"
-import { ModeToggle } from "./mode-toggle"
 
 const Header = () => {
     return (
@@ -23,8 +22,6 @@ const Header = () => {
                     <a href="#">Contact</a>
                 </nav>
                 <div className="flex w-1/3 justify-end gap-4 items-center">
-                    <ModeToggle />
-
                     <SignedIn>
                         <UserButton />
                     </SignedIn>
