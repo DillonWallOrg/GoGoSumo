@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react";
+import { Calendar, ChevronRight, MapPin } from "lucide-react";
 import { Button } from "./components/ui/button";
 import UserTable from "./user-table"
 
@@ -22,6 +22,30 @@ function App() {
             <div className="container mx-auto py-10">
                 <UserTable />
             </div>
+
+            <section className="py-16 bg-gray-100">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-3xl font-bold text-center mb-12">Featured Tours</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {['Tokyo City Explorer', 'Kyoto Cultural Journey', 'Mount Fuji Adventure'].map((tour, index) => (
+                            <Card key={index} className="overflow-hidden">
+                                <img src={`https://source.unsplash.com/random/800x600?japan,travel&sig=${index}`} alt={tour} className="w-full h-48 object-cover" />
+                                <CardContent className="p-4">
+                                    <h3 className="text-xl font-semibold mb-2">{tour}</h3>
+                                    <div className="flex items-center text-sm text-gray-600 mb-4">
+                                        <MapPin className="mr-1 h-4 w-4" />
+                                        <span>Various locations</span>
+                                        <Calendar className="ml-4 mr-1 h-4 w-4" />
+                                        <span>7 days</span>
+                                    </div>
+                                    <p className="text-gray-600 mb-4">Experience the best of Japan with our carefully curated tour packages.</p>
+                                    <Button variant="outline" className="w-full">Learn More</Button>
+                                </CardContent>
+                            </Card>
+                        ))}
+                    </div>
+                </div>
+            </section>
         </main>
     )
 }
