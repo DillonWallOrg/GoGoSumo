@@ -1,6 +1,7 @@
 import { Calendar, ChevronRight, MapPin } from "lucide-react";
 import { Button } from "./components/ui/button";
 import UserTable from "./user-table"
+import { Card, CardContent } from "./components/ui/card";
 
 function App() {
     const imageUrl = "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80";
